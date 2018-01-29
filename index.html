@@ -6,13 +6,130 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<title>Kamenný dvor</title>
 		<link rel="stylesheet" href="css/kamenny-dvor.css" rel='stylesheet' type='text/css' />
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 	</head>
 	<body>
-
+		<div class = "header">
+			<div class = "headerContent">
+				<div class = "logo">
+				<img src="icons/logo/logokolackov.png">
+				</div>
+				<ul class = "navMenu">
+						<li>
+							<a onclick="section(1)">Domov</a>
+						</li>						
+						<li>
+							<a onclick="section(2)">O nás</a>
+						</li>
+						<li>
+							<a onclick="section(3)">Okolie</a>
+						</li>
+						<li>
+							<a onclick="section(4)">Rezervácia</a>
+						</li>
+						<li>
+							<a onclick="section(5)">Cenník</a>
+						</li>
+						<li>
+							<a onclick="section(6)">Galéria</a>
+						</li>
+						<li>
+							<a onclick="section(6)">Kontakt</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+		<div class = "background">
+			<h1>Objavte krásy severného Spiša</h1>
+		</div>
+		<div class = "about">
+			<div class = "aboutContent">
+				<h2>Penzión Kamenný dvor Kolačkov***</h2>
+				<div class="divider"></div>
+				<div class="aboutItems">
+					<div class="aboutItem">
+						<img src="icons/ubytovanie.png">
+						<h3>Ubytovanie</h3>
+						<p>Penzión Kamenný dvor <br> Vám ponúka nadštandartné <br> ubytovacie možnosti <br> v príjemnom prostredí. <br>Kapacita penziónu je 50 lôžok.</p>
+					</div>
+					<div class="aboutItem" >
+						<img src="icons/restauracia.png">
+						<h3>Reštaurácia</h3>
+						<p>Naša reštaurácia nasýti všetky <br>zmysli počas celého dňa.<br> Srdečná atmosféra, útulné <br>prostredie, jedlá s chuťou <br>tradičnej kuchyne.</p>
+					</div>
+					<div class="aboutItem" >
+						<img src="icons/turistika.png">
+						<h3>Turistika</h3>
+						<p>Objavte krásy regiónu<br> severného Spiša, ktorý patrí <br>k najkrajším na Slovensku.<br> Všetky atrakcie nájdete v okruhu <br>50 km od penziónu.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="kamennyDvor">
+			<div class="kamennyDvorContent">
+				<div class="textArea">
+					<h2>Kamenný dvor***</h2>
+					<h4>Kolačkov</h4>
+					<div class="divider"></div>
+					<p style="margin-top: 20px;"><strong>Penzión Kamenný dvor</strong> sa nachádza v krásnom prírodnom prostredí, <br>
+					v <strong>obci Kolačkov</strong>, cca 9 km od Starej Ľubovne. Je typickým zaridením <br> vidieckého turizmu.
+					Okolitá príroda vytvára ideálne podmienky na <br>rekreačnú turistiku. V okolí je veľké množstvo turistických trás <br>
+					s krásnou lesnatou prírodou, s množstvom húb a lesných plodov. 
+					</p>
+					<h5>Návštevníkov čakajú taktiež zaujímavé atrakcie:</h5>
+					<p style="margin: 0;">- jazda na koni</p>
+					<p style="margin: 0;">- večerné posedenie pri živej hudbe</p>
+					<p style="margin: 0;">- splav Dunajca v nedalekých Pieninách</p>
+					<p style="margin: 0;">- návšteva hradu Stará Ľubovňa</p>
+					<p style="margin: 0;">- prehliadka skanzenu</p>
+					<br>
+					<p style="margin: 0;">Počas letnej sezóny je k dispozícii neďaleké termálne kúpalisko <br>
+					vo Vyšných Ružbachoch a počs zimnej sezóny lyžiarské stredisko<br> v Litmanovej.
+					Región v ktorom sa penzión nachádza, poskytuje veľké <br>množstvo kultúrnych a historických pamiatok. <strong>Ľubovianský hrad<br>
+					a skanzen, Červený kláštor</strong>...
+					</p>
+					<br>
+					<p style="margin: 0; padding-bottom: 120px;">Tešíme sa na Vašu návštevu...</p>
+				</div>
+				<div class = "image">
+					<img src="icons/kamennydvor.png">
+				</div>
+			</div>
+		</div>
+		<div class = "atrakcie">
+			<div class="atrakcieContent">
+			<h2>Atrakcie v okolí</h2>
+			<div class="divider"></div>
+			<div class="atrakcieSlick">
+				<div class = "atrakcieItem">
+					<img src="icons/kamennydvor.png">
+					<h3>Hrad Ľubovňa</h3>
+					<p>Ak patríte k milovníkom histórie <br> a budete mať niekedy cestu okolo <br>Starej Ľubovne, určite si nájdete čas<br> na prehlidku kamenného hradu <br>Ľubovňa, ktorý sa vypína nad Starou<br> Ľubovňou.</p>
+				</div>
+				<div class = "atrakcieItem">
+					<img src="icons/kamennydvor.png">
+					<h3>Rafting na Dunajci</h3>
+					<p>Vyskutuje sa tu množstvo jedinečných <br> a zvácnych druhov fauny a flóry (králik <br> Zawadský, arábka chocholíkatá, <br>púpava pieninská, borievka netata)<br> a ich biotopov.</p>
+				</div>
+				<div class = "atrakcieItem">
+					<img src="icons/kamennydvor.png">
+					<h3>Kúpele Ružbachy</h3>
+					<p>Termálne kúpalisko sa nachádza v<br>klimatických a minerálnych kúpeľoch<br>Vyšné Ružbachy a ponúka 2 veľké<br>a 2 detské vonkajšie bazény<br> a 1 krytý termálny bazén.</p>
+				</div>
+				<div class = "atrakcieItem">
+					<img src="icons/kamennydvor.png">
+					<h3>Skanzen Ľubovňa</h3>
+				</div>
+			</div>
+			</div>
+		</div>
 	<script src="js/kamenny-dvor.js"></script>
 	</body>
 </html> 
