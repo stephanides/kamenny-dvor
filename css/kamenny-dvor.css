@@ -35,4 +35,7 @@ ul{list-style-type: none;}
 .atrakcieContent h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: center;}
 .atrakcieContent .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 50%;transform: translateX(-50%);}
 .atrakcieItem{outline: none;}
-.atrakcieItem img{width: 150px;height: 150px;border-radius: 200px;}
+.atrakcieItem img{}
+
+
+
