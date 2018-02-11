@@ -2,6 +2,8 @@ body{margin: 0px;padding: 0px;overflow-x: hidden;}
 ul{list-style-type: none;}
 
 
+
+
 .header{background-color: #fbf8ea;}
 .headerContent{max-width: 1170px;margin-left: 50%;transform: translateX(-50%);width: 1170px;}
 .navMenu{font-size: 16px;height: 100%; padding:0; text-align: center;width: 800px;text-transform: uppercase;margin: 0;float: right;}
@@ -35,7 +37,16 @@ ul{list-style-type: none;}
 .atrakcieContent h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: center;}
 .atrakcieContent .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 50%;transform: translateX(-50%);}
 .atrakcieItem{outline: none;}
-.atrakcieItem img{}
-
+.atrakcieItem img{margin-left: 50%;transform: translateX(-50%);}
+.atrakcieItem h3{text-align: center;font-family: 'Playfair Display', serif;}
+.atrakcieItem p{text-align: center;font-family:  'Roboto';color: #6c654b;font-size: 14px;}
+.rezervacia{background-color: #fbf8ea;}
+.rezervaciaContent{max-width: 1170px; width: 1170px;margin-left: 50%;transform: translateX(-50%);}
+.rezervaciaContent h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: center;}
+.rezervaciaContent .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 50%;transform: translateX(-50%);}
+.rezervaciaContent .dateprice{background-color: #f0ecd8;}
+.rezervaciaContent .dateprice .date{display: inline-flex;}
+.rezervaciaContent .dateprice .price{}
+.rezervaciaContent .dateprice .date p{width: 220px;}
 
 
