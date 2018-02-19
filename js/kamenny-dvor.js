@@ -9,7 +9,8 @@ function section(e){
 
 $( function() {
     $( "#datefrom" ).datepicker({
-    	minDate: 0
+    	minDate: 0,
+    	altField: "#actualDate"
     });
   } );
 $( function() {
