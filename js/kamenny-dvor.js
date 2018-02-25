@@ -14,5 +14,7 @@ $( function() {
     });
   } );
 $( function() {
-    $( "#dateto" ).datepicker();
+    $( "#dateto" ).datepicker({
+    	minDate: 1
+    });
   } );
