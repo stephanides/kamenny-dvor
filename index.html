@@ -106,7 +106,7 @@
 		<div class = "atrakcie">
 			<div class="atrakcieContent">
 			<h2>Atrakcie v okolí</h2>
-			<div class="divider"></div>
+			<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
 			
 
 				<ul id = "lightSlider" >
@@ -136,9 +136,10 @@
 	<div class = "rezervacia">
 		<div class = "rezervaciaContent">
 			<h2>Rezervácia a cenník</h2>
-			<div class="divider"></div>
+			<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
 			<div class = "dateprice">
 				<div class = "date">
+				<form action="/action_page.php">
 					<p>Dátum od: <input type="text" id="datefrom" placeholder="DD/MM/YYYY">
 						<img src="icons/kalendar_48px.svg">
 					</p>
@@ -151,7 +152,8 @@
 					<p>Deti <input type=number id="pocetdeti" placeholder="0">
 						<img src="icons/deti_48px.svg">
 					</p>
-					<a>Odoslať rezerváciu</a>
+					 <input type="submit" value="Submit">
+					</form>
 				</div>
 				<div class = "price"></div>
 			</div>

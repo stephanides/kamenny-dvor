@@ -45,10 +45,11 @@ ul{list-style-type: none;}
 .rezervaciaContent h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: center;}
 .rezervaciaContent .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 50%;transform: translateX(-50%);}
 .rezervaciaContent .dateprice{background-color: #f0ecd8;}
-.rezervaciaContent .dateprice .date{display: inline-flex;}
+.rezervaciaContent .dateprice .date{}
 .rezervaciaContent .dateprice .price{}
-.rezervaciaContent .dateprice .date p{width: 220px;background-color: white;position: relative;height: 60px;font-size: 16px;}
+.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 150px;margin-left: 50%;transform: translateX(-50%);}
+.rezervaciaContent .dateprice .date p{width: 220px;background-color: white;position: relative;height: 60px;font-size: 16px;margin: 0;}
 .rezervaciaContent .dateprice .date p img{filter: invert(0.5) sepia(1) brightness(0.9);position: absolute;right: 0;}
-.rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 100%;height: 100%;position: absolute;top: 16px;left: 0;}
+.rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 75%;height: 44px;position: absolute;top: 16px;left: 0;font-size: 16px;padding-left: 5%;}
 
 
