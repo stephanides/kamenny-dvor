@@ -1,7 +1,12 @@
 body{margin: 0px;padding: 0px;overflow-x: hidden;}
 ul{list-style-type: none;}
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
 
 .header{background-color: #fbf8ea;}
@@ -47,9 +52,10 @@ ul{list-style-type: none;}
 .rezervaciaContent .dateprice{background-color: #f0ecd8;}
 .rezervaciaContent .dateprice .date{}
 .rezervaciaContent .dateprice .price{}
-.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 150px;margin-left: 50%;transform: translateX(-50%);}
-.rezervaciaContent .dateprice .date p{width: 220px;background-color: white;position: relative;height: 60px;font-size: 16px;margin: 0;}
-.rezervaciaContent .dateprice .date p img{filter: invert(0.5) sepia(1) brightness(0.9);position: absolute;right: 0;}
-.rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 75%;height: 44px;position: absolute;top: 16px;left: 0;font-size: 16px;padding-left: 5%;}
-
+.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 100px;margin-left: 50%;transform: translateX(-50%);}
+.rezervaciaContent .dateprice .date p{width: 195px;background-color: white;position: relative;height: 60px;font-size: 16px;margin: 0;    font-family: roboto light;padding-left: 25px;padding-top: 20px;}
+.rezervaciaContent .dateprice .date p img{filter: invert(0.5) sepia(1) brightness(0.9);position: absolute;right: 0;height: 35px;margin-top: 7px;right: 0;margin-right: 12px;}
+.rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 75%;height: 30px;position: absolute;top: 42px;left: 0;font-size: 18px;padding-left:25px;font-weight: bold;font-family: roboto;}
+.rezervaciaContent input[type="submit"]{width: 250px;background-color: #9a8543;border: none;color: white;padding: 0;font-size: 18px;font-family: roboto;font-weight: bold;text-transform: uppercase;cursor: pointer;}
+.rezervaciaContent .dateprice .date p a{width: 2px;background-color: #f0ecd8;height: 50px;right: 0;position: absolute;}
 
