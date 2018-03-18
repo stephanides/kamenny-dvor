@@ -52,7 +52,9 @@ input::-webkit-inner-spin-button {
 .rezervaciaContent .dateprice{background-color: #f0ecd8;}
 .rezervaciaContent .dateprice .date{}
 .rezervaciaContent .dateprice .price{}
-.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 100px;margin-left: 50%;transform: translateX(-50%);}
+.rezervaciaContent .dateprice .price .priceType{}
+.rezervaciaContent .dateprice .price .priceRoom{}
+.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 100px;margin-left: 50%;transform: translateX(-50%);    margin-bottom: 70px;}
 .rezervaciaContent .dateprice .date p{width: 195px;background-color: white;position: relative;height: 60px;font-size: 16px;margin: 0;    font-family: roboto light;padding-left: 25px;padding-top: 20px;}
 .rezervaciaContent .dateprice .date p img{filter: invert(0.5) sepia(1) brightness(0.9);position: absolute;right: 0;height: 35px;margin-top: 7px;right: 0;margin-right: 12px;}
 .rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 75%;height: 30px;position: absolute;top: 42px;left: 0;font-size: 18px;padding-left:25px;font-weight: bold;font-family: roboto;}
