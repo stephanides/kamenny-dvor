@@ -14,12 +14,13 @@
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<link rel="stylesheet" href="css/lightslider.css" rel='stylesheet' type='text/css' />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div class = "header">
+		<div class = "header" id = "section-1">
 			<div class = "headerContent">
 				<div class = "logo">
-				<img src="icons/logo/logokolackov.png">
+				<img src="images/icons/logo/logokolackov.png">
 				</div>
 				<ul class = "navMenu">
 						<li>
@@ -35,41 +36,71 @@
 							<a onclick="section(4)">Rezervácia</a>
 						</li>
 						<li>
-							<a onclick="section(5)">Cenník</a>
+							<a onclick="section(4)">Cenník</a>
 						</li>
 						<li>
-							<a onclick="section(6)">Galéria</a>
+							<a onclick="section(5)">Galéria</a>
 						</li>
 						<li>
 							<a onclick="section(6)">Kontakt</a>
 						</li>
 				</ul>
+				
+				<a id = "menuMobileIcon" onclick = "showMenuMobile()">
+					<img src="images/icons/ic_menu_black_24px.svg">
+				</a>
+				<a id = "closeMenuMobileIcon" onclick = "hideMenuMobile()">
+					<img src="images/icons/ic_close_black_24px.svg">
+				</a>
 			</div>
 		</div>
 		<div class = "background">
 			<h1>Objavte krásy severného Spiša</h1>
 		</div>
-		<div class = "about">
+		<div class = "about" id = "section-2">
 			<div class = "aboutContent">
 				<h2>Penzión Kamenný dvor Kolačkov***</h2>
 				<div class="divider"></div>
 				<div class="aboutItems">
 					<div class="aboutItem">
-						<img src="icons/ubytovanie_48px.svg">
+						<img src="images/icons/ubytovanie_48px.svg">
 						<h3>Ubytovanie</h3>
 						<p>Penzión Kamenný dvor <br> Vám ponúka nadštandartné <br> ubytovacie možnosti <br> v príjemnom prostredí. <br>Kapacita penziónu je 50 lôžok.</p>
 					</div>
 					<div class="aboutItem" >
-						<img src="icons/restauracia_48px.svg">
+						<img src="images/icons/restauracia_48px.svg">
 						<h3>Reštaurácia</h3>
 						<p>Naša reštaurácia nasýti všetky <br>zmysli počas celého dňa.<br> Srdečná atmosféra, útulné <br>prostredie, jedlá s chuťou <br>tradičnej kuchyne.</p>
 					</div>
 					<div class="aboutItem" >
-						<img src="icons/ic_directions_car_black_48px.svg">
+						<img src="images/icons/ic_directions_car_black_48px.svg">
 						<h3>Turistika</h3>
 						<p>Objavte krásy regiónu<br> severného Spiša, ktorý patrí <br>k najkrajším na Slovensku.<br> Všetky atrakcie nájdete v okruhu <br>50 km od penziónu.</p>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class = "aboutMobile" id = "section-2">
+			<div class = "aboutContent">
+				<h2>Penzión Kamenný dvor Kolačkov***</h2>
+				<div class="divider"></div>
+				<ul id = "lightSlider2">
+					<li class="aboutItem">
+						<img src="images/icons/ubytovanie_48px.svg">
+						<h3>Ubytovanie</h3>
+						<p>Penzión Kamenný dvor <br> Vám ponúka nadštandartné <br> ubytovacie možnosti <br> v príjemnom prostredí. <br>Kapacita penziónu je 50 lôžok.</p>
+					</li>
+					<li class="aboutItem" >
+						<img src="images/icons/restauracia_48px.svg">
+						<h3>Reštaurácia</h3>
+						<p>Naša reštaurácia nasýti všetky <br>zmysli počas celého dňa.<br> Srdečná atmosféra, útulné <br>prostredie, jedlá s chuťou <br>tradičnej kuchyne.</p>
+					</li>
+					<li class="aboutItem" >
+						<img src="images/icons/ic_directions_car_black_48px.svg">
+						<h3>Turistika</h3>
+						<p>Objavte krásy regiónu<br> severného Spiša, ktorý patrí <br>k najkrajším na Slovensku.<br> Všetky atrakcie nájdete v okruhu <br>50 km od penziónu.</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="kamennyDvor">
@@ -96,44 +127,45 @@
 					a skanzen, Červený kláštor</strong>...
 					</p>
 					<br>
-					<p style="margin: 0; padding-bottom: 120px;">Tešíme sa na Vašu návštevu...</p>
+					<p id = "tesimeSa"style="margin: 0; ">Tešíme sa na Vašu návštevu...</p>
 				</div>
 				<div class = "image">
-					<img src="icons/kamennydvor.png">
+					<img src="images/icons/kamennydvor.png">
 				</div>
 			</div>
 		</div>
-		<div class = "atrakcie">
+		<div class = "atrakcie" id = "section-3">
 			<div class="atrakcieContent">
 			<h2>Atrakcie v okolí</h2>
 			<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
 			
 
-				<ul id = "lightSlider" >
+				<ul id = "lightSlider1" >
 					<li class = "atrakcieItem">
-						<img src="icons/hrad.png">
+						<img src="images/icons/hrad.png">
 						<h3>Hrad Ľubovňa</h3>
 						<p>Ak patríte k milovníkom histórie <br> a budete mať niekedy cestu okolo <br>Starej Ľubovne, určite si nájdete čas<br> na prehlidku kamenného hradu <br>Ľubovňa, ktorý sa vypína nad Starou<br> Ľubovňou.</p>
 					</li>
 					<li class = "atrakcieItem">
-						<img src="icons/rafting.png">
+						<img src="images/icons/rafting.png">
 						<h3>Rafting na Dunajci</h3>
 						<p>Vyskutuje sa tu množstvo jedinečných <br> a zvácnych druhov fauny a flóry (králik <br> Zawadský, arábka chocholíkatá, <br>púpava pieninská, borievka netata)<br> a ich biotopov.</p>
 					</li>
 					<li class = "atrakcieItem">
-						<img src="icons/kupele.png">
+						<img src="images/icons/kupele.png">
 						<h3>Kúpele Ružbachy</h3>
 						<p>Termálne kúpalisko sa nachádza v<br>klimatických a minerálnych kúpeľoch<br>Vyšné Ružbachy a ponúka 2 veľké<br>a 2 detské vonkajšie bazény<br> a 1 krytý termálny bazén.</p>
 					</li>
 					<li class = "atrakcieItem">
-						<img src="icons/rafting.png">
+						<img src="images/icons/rafting.png">
 						<h3>Skanzen Ľubovňa</h3>
 						<p>Vyskutuje sa tu množstvo jedinečných <br> a zvácnych druhov fauny a flóry (králik <br> Zawadský, arábka chocholíkatá, <br>púpava pieninská, borievka netata)<br> a ich biotopov.</p>
 					</li>
 				</ul>
 			</div>
-	</div>
-	<div class = "rezervacia">
+		</div>
+		<div class = "rezervacia" id = "section-4">
+
 		<div class = "rezervaciaContent">
 			<h2>Rezervácia a cenník</h2>
 			<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
@@ -141,30 +173,31 @@
 				<div class = "date">
 					<form action="/action_page.php">
 						<p>Dátum od: <input type="text" id="datefrom" placeholder="DD/MM/YYYY">
-							<img src="icons/kalendar_48px.svg">
+							<img src="images/icons/kalendar_48px.svg">
 							<a class = "dateDivider"></a>
 						</p>
 						<p>Dátum do: <input type="text" id="dateto" placeholder="DD/MM/YYYY">
-							<img src="icons/kalendar_48px.svg">
+							<img src="images/icons/kalendar_48px.svg">
 							<a class = "dateDivider"></a>
 						</p>
 						<p style="width: 180px;">Počet osôb <input type=number id="pocetosob" placeholder="0">
-							<img src="icons/dospely_48px.svg">
+							<img src="images/icons/dospely_48px.svg">
 							<a class = "dateDivider"></a>
 						</p>
 						<p style="width: 100px;">Deti <input type=number id="pocetdeti" placeholder="0">
-							<img src="icons/deti_48px.svg">
+							<img src="images/icons/deti_48px.svg">
 						</p>
 						 <input type="submit" value="Odoslať rezerváciu">
 					</form>
 				</div>
 				<div class = "price">
 					<div class = "priceType">
+						<p></p>
 						<p>2 Dospelé osoby/noc</p>
 						<p>2 Dospelé osoby/víkend</p>
 						<p>dieťa</p>
 					</div>
-					<div class = "priceRoom">
+					<div class = "priceRoom" style="background-color: white;">
 						<p>2-lôžková izba</p>
 						<p>30 €</p>
 						<p>50 €</p>
@@ -176,12 +209,249 @@
 						<p>80 €</p>
 						<p>8 €</p>
 					</div>
+					<div class="priceInfo">
+						<p>Uvedená cena je vrátane raňajok. Raňajky a večer formou bufetových stolov.</p>
+					</div>
+				</div>
+				<div class = "priceMobile">
+					<p class = "priceItem" style="color: #8e8a7d; background-color: #fbf8ea;text-align: center;line-height: 100px;padding-left: 0;">2-lôžková izba</p>
+					<p class = "priceItem" style="color: #9a8543; background-color: white;line-height: 80px;">2 dospelé osoby/noc <span>30 €</span></p>
+					<p class = "priceItem" style="color: #9a8543; background-color: #f0ecd8;line-height: 80px;">2 dospelé osoby/víkend <span>50 €</span></p>
+					<p class = "priceItem" style="color: #9a8543; background-color: white;line-height: 80px;">dieťa <span>5 €</span></p>
+					<p class = "priceItem" style="color: #8e8a7d; background-color: #fbf8ea;text-align: center;line-height: 100px;padding-left: 0;">3-lôžková izba</p>
+					<p class = "priceItem" style="color: #9a8543; background-color: white;line-height: 80px;">2 dospelé osoby/noc <span>45 €</span></p>
+					<p class = "priceItem" style="color: #9a8543; background-color: #f0ecd8;line-height: 80px;">2 dospelé osoby/víkend <span>80 €</span></p>
+					<p class = "priceItem" style="color: #9a8543; background-color: white;line-height: 80px;">dieťa <span>7 €</span></p>
+					<div class="priceInfo">
+						<p>Uvedená cena je vrátane raňajok. Raňajky a večer formou bufetových stolov.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		</div>
+		<div class = "galeria" id = "section-5">
+			<div class = "galeriaBckgrnd">
+				
+			</div>
+			<div class = "galeriaContent">
+				<h2>Galéria</h2>
+				<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
+				<div class = "galleryTypes" >
+					<div class = "galleryType" onclick="openPenzionModal()">
+						<img src="images/penzion.png">
+						<p>Penzión Kamenný dvor</p>
+					</div>
+					<div class = "galleryType"  onclick="openHalaModal()">
+						<img src="images/hala.png">
+						<p>Spoločenská hala</p>
+					</div>
+					<div class = "galleryType" onclick="openPohostinstvoModal()">
+						<img src="images/pohostinstvo.png">
+						<p>Pohostinstvo</p>
+					</div>
+					<div class = "galleryType" onclick="openSpolModal()">
+						<img src="images/spolmiestnost.png">
+						<p>Spoločenská miestnosť</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="map" ></div>
+		<div class = "footer" id = "section-6">
+			<div class = "footerContent">
+				<div class = "footerItem">
+					<h3>Kontakt</h3>
+					<p>Kamenný dvor Kolačkov <br>Kolačkov 138, <br>065 11 Kolačkov<br>Slovenská republika</p>
+					<p>Tel: <strong>+421 904 193 646</strong><br><strong>+421 910 333 585</strong><br>E-Mail: <strong>stamatinvest@stamatinvest.sk</strong></p>
+				</div>
+				<div class = "footerItem">
+					<h3>Sociálne siete</h3>
+					<p>Sledujte nás na sociálnych sieťach,<br>kde nájdete všetky informácie.</p>
+					<a target="_blank" href="https://www.facebook.com/Kamenn%C3%BD-dvor-Kola%C4%8Dkov-298351843587310/"><i class="fa fa-facebook fa-2x" style="color:#8e8a7d"></i></a>
+				</div>
+				<div class = "footerItem" style="width: 40%;">
+					<h3>Kontaktný formulár</h3>
+					<form id = "contact_form" name = "contact_form">
+						<div class = "leftFooter">
+							<input type="text" id="fname" name="firstname" placeholder="Meno">
+							<input type="text" id="email" name="e-mail" placeholder="E-Mail">
+							<input type="text" id="sub" name="subject" placeholder="Predmet">
+						</div>
+						<div class="rightFooter">
+							<textarea id="message" name="message" placeholder="Text správy"></textarea>
+							<input type="submit" value="Napíšte nám" onclick="sendEmail()">
+						</div>
+						<div id="form-messages"></div>
+					</form>
+				</div>
+			</div>
+		</div>
 
+
+	<div id="penzionModal" class="modal" >
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlides">
+	      <div class="numbertext">1 / 4</div>
+	      <img src="images/penzion.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">2 / 4</div>
+	      <img src="images/penzion.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">3 / 4</div>
+	      <img src="images/penzion.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">4 / 4</div>
+	      <img src="images/penzion.png" style="width:100%">
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+	  </div>
+	</div>
+	<div id="halaModal" class="modal" >
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlidesHala">
+	      <div class="numbertext">1 / 4</div>
+	      <img src="images/hala.png" style="width:100%;">
+	    </div>
+
+	    <div class="mySlidesHala">
+	      <div class="numbertext">2 / 4</div>
+	      <img src="images/hala.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesHala">
+	      <div class="numbertext">3 / 4</div>
+	      <img src="images/hala.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesHala">
+	      <div class="numbertext">4 / 4</div>
+	      <img src="images/hala.png" style="width:100%">
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlidesHala(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlidesHala(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="captionHala"></p>
+	    </div>
+	  </div>
+	</div>
+	<div id="pohostinstvoModal" class="modal" >
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlidesPohostinstvo">
+	      <div class="numbertext">1 / 4</div>
+	      <img src="images/pohostinstvo.png" style="width:100%;">
+	    </div>
+
+	    <div class="mySlidesPohostinstvo">
+	      <div class="numbertext">2 / 4</div>
+	      <img src="images/pohostinstvo.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesPohostinstvo">
+	      <div class="numbertext">3 / 4</div>
+	      <img src="images/pohostinstvo.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesPohostinstvo">
+	      <div class="numbertext">4 / 4</div>
+	      <img src="images/pohostinstvo.png" style="width:100%">
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlidesPohostinstvo(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlidesPohostinstvo(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="captionPohostinstvo"></p>
+	    </div>
+	  </div>
+	</div>
+	<div id="spolModal" class="modal" >
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlidesSpol">
+	      <div class="numbertext">1 / 4</div>
+	      <img src="images/spolmiestnost.png" style="width:100%;">
+	    </div>
+
+	    <div class="mySlidesSpol">
+	      <div class="numbertext">2 / 4</div>
+	      <img src="images/spolmiestnost.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesSpol">
+	      <div class="numbertext">3 / 4</div>
+	      <img src="images/spolmiestnost.png" style="width:100%">
+	    </div>
+
+	    <div class="mySlidesSpol">
+	      <div class="numbertext">4 / 4</div>
+	      <img src="images/spolmiestnost.png" style="width:100%">
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlidesSpol(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlidesSpol(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="captionSpol"></p>
+	    </div>
+	  </div>
+	</div>
+	<div id = "menuMobile">
+					<ul class = "navMenuMobile">
+							<li>
+								<a onclick="sectionMobile(1)">Domov</a>
+							</li>						
+							<li>
+								<a onclick="sectionMobile(2)">O nás</a>
+							</li>
+							<li>
+								<a onclick="sectionMobile(3)">Okolie</a>
+							</li>
+							<li>
+								<a onclick="sectionMobile(4)">Rezervácia</a>
+							</li>
+							<li>
+								<a onclick="sectionMobile(4)">Cenník</a>
+							</li>
+							<li>
+								<a onclick="sectionMobile(5)">Galéria</a>
+							</li>
+							<li>
+								<a onclick="sectionMobile(6)">Kontakt</a>
+							</li>
+					</ul>
+				</div>
 	<script src="js/kamenny-dvor.js"></script>
 	<script src="js/lightslider.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIgVXmPu4gpq_T_z_9XvjPt3lvH0yHzY0&callback=myMap"type="text/javascript"></script>
+	
 	</body>
 </html> 

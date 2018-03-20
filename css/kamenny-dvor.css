@@ -8,6 +8,17 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
+#penzionModal{display: none;}
+
+.fa{cursor:pointer;}
+.fa:hover{color:white !important;}
+
+/*hide for Mobiles*/
+#menuMobile{display: none;}
+#menuMobileIcon{display: none;}
+#closeMenuMobileIcon{display: none;}
+.aboutMobile{display: none;}
+.priceMobile{display: none;}
 
 .header{background-color: #fbf8ea;}
 .headerContent{max-width: 1170px;margin-left: 50%;transform: translateX(-50%);width: 1170px;}
@@ -45,19 +56,451 @@ input::-webkit-inner-spin-button {
 .atrakcieItem img{margin-left: 50%;transform: translateX(-50%);}
 .atrakcieItem h3{text-align: center;font-family: 'Playfair Display', serif;}
 .atrakcieItem p{text-align: center;font-family:  'Roboto';color: #6c654b;font-size: 14px;}
-.rezervacia{background-color: #fbf8ea;}
+.rezervacia{background-color: #fbf8ea;padding-bottom: 100px;}
 .rezervaciaContent{max-width: 1170px; width: 1170px;margin-left: 50%;transform: translateX(-50%);}
 .rezervaciaContent h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: center;}
 .rezervaciaContent .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 50%;transform: translateX(-50%);}
 .rezervaciaContent .dateprice{background-color: #f0ecd8;}
 .rezervaciaContent .dateprice .date{}
 .rezervaciaContent .dateprice .price{}
-.rezervaciaContent .dateprice .price .priceType{}
-.rezervaciaContent .dateprice .price .priceRoom{}
-.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 100px;margin-left: 50%;transform: translateX(-50%);    margin-bottom: 70px;}
+.rezervaciaContent .dateprice .price p{width: 25%;text-align: center;}
+.rezervaciaContent .dateprice .price .priceType{color: #9a8543;font-family: 'Roboto';display: flex;height: 80px;font-size: 18px;line-height: 36px;}
+.rezervaciaContent .dateprice .price .priceType p{margin: 0;line-height: 120px;}
+.rezervaciaContent .dateprice .price .priceRoom{color:#8e8a7d;font-family: 'Roboto';display: flex;height: 80px;font-size: 18px;line-height: 36px;}
+.rezervaciaContent .dateprice .price .priceInfo{color:#8e8a7d;font-family: 'Roboto';height: 80px;background-color: white;font-size: 18px;}
+.rezervaciaContent .dateprice .price .priceInfo p{margin: 0;width: 100%;line-height: 80px;}
+.rezervaciaContent .dateprice .date form{display: inline-flex;margin-top: 100px;margin-left: 50%;transform: translateX(-50%);   margin-bottom: 70px;}
 .rezervaciaContent .dateprice .date p{width: 195px;background-color: white;position: relative;height: 60px;font-size: 16px;margin: 0;    font-family: roboto light;padding-left: 25px;padding-top: 20px;}
 .rezervaciaContent .dateprice .date p img{filter: invert(0.5) sepia(1) brightness(0.9);position: absolute;right: 0;height: 35px;margin-top: 7px;right: 0;margin-right: 12px;}
 .rezervaciaContent .dateprice .date p input{border:none;outline: none;width: 75%;height: 30px;position: absolute;top: 42px;left: 0;font-size: 18px;padding-left:25px;font-weight: bold;font-family: roboto;}
-.rezervaciaContent input[type="submit"]{width: 250px;background-color: #9a8543;border: none;color: white;padding: 0;font-size: 18px;font-family: roboto;font-weight: bold;text-transform: uppercase;cursor: pointer;}
+.rezervaciaContent input[type="submit"]{width: 250px;background-color: #9a8543;border: none;color: white;padding: 0;font-size: 18px;font-family: roboto;font-weight: bold;text-transform: uppercase;cursor: pointer;outline: none;}
 .rezervaciaContent .dateprice .date p a{width: 2px;background-color: #f0ecd8;height: 50px;right: 0;position: absolute;}
+.galeria{background-color: #fbf8ea;height: 640px;}
+.galeria .galeriaBckgrnd{height: 320px;background-color: #f0ecd8;width: 100%;position: absolute;}
+.galeria .galeriaContent{position: relative;width: 1170px;margin-left: 50%;transform: translateX(-50%);}
+.galeria h2{font-family: 'Playfair Display', serif;margin: 0;font-size: 30px;padding-top: calc(100vw*0.025);text-align: left;}
+.galeria .divider{background-color: #9a8543;   height: calc(100vw*0.002);margin-top: 4px;position: relative;width: 240px;margin-left: 120px;transform: translateX(-50%);}
+.galeria .galleryTypes{display: flex;}
+.galeria .galleryType{width: 25%;padding-top: 50px;cursor: pointer;}
+.galeria .galleryType p{font-family: 'Roboto';cursor:auto;font-weight: 800;font-size:18px; color: #404040; }
+.galeria .galleryType:hover p{color:#9a8543;}
+#map{width: 100%;height: 380px;}
+.footer{background-color:#404040;width: 100%;}
+.footer .footerContent{max-width: 1170px; width: 1170px;margin-left: 50%;transform: translateX(-50%);display: flex;padding-bottom: 50px;padding-top: 50px;}
+.footer .footerContent .footerItem{width: 30%}
+.footer .footerContent .footerItem h3{font-family: 'Playfair Display'; color: white;font-size: 26px;font-weight: 100;}
+.footer .footerContent .footerItem p{color: #8e8a7d; font-family: 'Roboto';font-size: 16px;}
+.footer .footerContent .footerItem p strong{color: #fbf8ea;}
+.footer .footerContent .footerItem form{display: flex;font-family: 'Roboto';}
+.footer .footerContent .footerItem .leftFooter{width: 45%;height: 100%;}
+.footer .footerContent .footerItem .rightFooter{width: 50%;height: 100%;margin-left: 5%;}
+.footer .footerContent .footerItem form input[type=text]{background-color: transparent;border: none;border-bottom: solid 3px #9a8543;font-size: 16px;width: 100%;    padding-top: 25px;outline: none;color: white;}
+.footer .footerContent .footerItem form textarea {width:100%;padding-top: 25px;background-color: transparent;border: none;outline: none;font-size: 16px;height: 111px;border-bottom: solid 3px #9a8543;font-family: 'Roboto' !important;color: white;}
+.footer .footerContent .footerItem form input[type=submit]{width: 100%;height: 50px;margin-top: 30px;background-color: #9a8543;color: white;outline: none;border:none;font-size: 16px;font-family: 'Roboto';text-transform: uppercase;}
+#tesimeSa{padding-bottom: 120px;}
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vw;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25vw;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/*Media Query*/
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .header{position: fixed;top: 0;height: 116px;z-index: 20;}
+  .background{margin-top: 116px;}
+  .navMenu{display: none;}
+  .headerContent{max-width: 100vw;}
+  #menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #menuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #closeMenuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #menuMobile{display:block;height: calc(100vh - 116px);position: fixed;top:-200vh;width: 100vw;background-color: #f0ecd8;margin-top: 116px;transition: top .5s ease-out;}
+  #menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  #menuMobile li{padding-top: 20px;}
+  #menuMobile li a{color: #404040;font-family: 'Playfair Display';font-size: 26px;}
+  .background{height: 100vw;background-position-x:-50%; }
+  .background h1{font-size: calc(100vw*0.1);}
+  .aboutContent{width: 100vw;}
+  .aboutContent h2{font-size: 28px;padding-top: calc(100vw*0.1);}
+  .aboutContent .divider{height: 5px;}
+  .aboutMobile{display: block;}
+  .about{display: none;}
+  .kamennyDvor{margin-top: 50px;}
+  .kamennyDvorContent{width: 100vw;display: block;}
+  .kamennyDvorContent .textArea{width: 100vw;}
+  .kamennyDvorContent .textArea h2{padding-top: 60px;text-align: center;}
+  .kamennyDvorContent .textArea h4{text-align: center;font-size: 22px;}
+  .kamennyDvorContent .textArea .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);margin-top: 10px;width:220px;    margin-bottom: 50px; }
+  .kamennyDvorContent .textArea p{padding-left: 20px;padding-right: 20px;}
+  .kamennyDvorContent .textArea h5{padding-left: 20px;padding-right: 20px;}
+  #tesimeSa{padding-bottom: 50px;}
+  .kamennyDvorContent .image img{top: 0;transform: none;}
+  .atrakcieContent{width: 100vw;}
+  .atrakcieContent h2{padding-top: 60px;}
+  .atrakcieContent .divider{height: 5px;    margin-bottom: 50px !important;}
+  .rezervacia{padding-bottom: 30px;}
+  .rezervaciaContent h2{    padding-top: calc(100vw*0.075);}
+  .rezervaciaContent .divider{margin-bottom: 40px;height: 5px;}
+  .rezervaciaContent{width: 100vw;}
+  .rezervaciaContent .dateprice .date form{display: block;width: 100vw;margin-top: 40px;margin-bottom: 0;}
+  .rezervaciaContent .dateprice{margin-left: 20px;margin-right: 20px;}
+  .rezervaciaContent .dateprice .date p{width: 50% !important;margin-left: 50%;transform: translateX(-50%);top: 30px;margin-top: 20px;}
+  .rezervaciaContent .dateprice .date p a{display: none;}
+  .rezervaciaContent .dateprice .date p img{right: 10px;}
+  .rezervaciaContent input[type="submit"]{width: calc(100vw - 40px);margin-top: 50px;margin-left: 20px;height: 80px;}
+  .price{display: none;}
+  .priceMobile{display: block;}
+  .priceMobile .priceItem {height: 80px;margin: 0;font-family: roboto;font-size: 20px;    padding-left: 20px;}
+  .priceMobile .priceItem span{color: #8e8a7d;float: right;padding-right: 20px;}
+  .priceMobile .priceInfo{background-color: #fbf8ea;color: #8e8a7d;font-family: roboto;font-size: 20px;    padding-top: 30px;text-align: center;}
+  .galeria{height: unset;}
+  .galeria .galeriaBckgrnd{display: none;}
+  .galeria .galeriaContent{width: 100vw;}
+  .galeria h2{text-align: center;}
+  .galeria .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);}
+  .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
+  .galeria .galleryType p{width: 250px;text-align: center;}
+  .modal-content{width: 80%;margin-top: 36px;}
+  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
+  .modal{top: 116px;}
+  #map{display: none;}
+  .footer .footerContent{width: 100vw;display: inline;}
+  .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
+  .footer .footerContent .footerItem h3{font-size:30px;font-weight: 800; }
+  .footer .footerContent .footerItem form{display: inline;}
+  .footer .footerContent .footerItem .leftFooter{width: 50vw;}
+  .footer .footerContent .footerItem .rightFooter{margin-left: 0;}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .header{position: fixed;top: 0;height: 116px;z-index: 20;}
+  .background{margin-top: 116px;}
+  .navMenu{display: none;}
+  .headerContent{max-width: 100vw;}
+  #menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #menuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #closeMenuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #menuMobile{display:block;height: calc(100vh - 116px);position: fixed;top:-200vh;width: 100vw;background-color: #f0ecd8;margin-top: 116px;transition: top .5s ease-out;}
+  #menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  #menuMobile li{padding-top: 20px;}
+  #menuMobile li a{color: #404040;font-family: 'Playfair Display';font-size: 26px;}
+  .background{height: 100vw;background-position-x:-50%; }
+  .background h1{font-size: calc(100vw*0.1);}
+  .aboutContent{width: 100vw;}
+  .aboutContent h2{font-size: 28px;padding-top: calc(100vw*0.1);}
+  .aboutContent .divider{height: 5px;}
+  .aboutMobile{display: block;}
+  .about{display: none;}
+  .kamennyDvor{margin-top: 50px;}
+  .kamennyDvorContent{width: 100vw;display: block;}
+  .kamennyDvorContent .textArea{width: 100vw;}
+  .kamennyDvorContent .textArea h2{padding-top: 60px;text-align: center;}
+  .kamennyDvorContent .textArea h4{text-align: center;font-size: 22px;}
+  .kamennyDvorContent .textArea .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);margin-top: 10px;width:220px;    margin-bottom: 50px; }
+  .kamennyDvorContent .textArea p{padding-left: 20px;padding-right: 20px;}
+  .kamennyDvorContent .textArea h5{padding-left: 20px;padding-right: 20px;}
+  #tesimeSa{padding-bottom: 50px;}
+  .kamennyDvorContent .image img{top: 0;transform: none;}
+  .atrakcieContent{width: 100vw;}
+  .atrakcieContent h2{padding-top: 60px;}
+  .atrakcieContent .divider{height: 5px;    margin-bottom: 50px !important;}
+  .rezervacia{padding-bottom: 30px;}
+  .rezervaciaContent h2{    padding-top: calc(100vw*0.075);}
+  .rezervaciaContent .divider{margin-bottom: 40px;height: 5px;}
+  .rezervaciaContent{width: 100vw;}
+  .rezervaciaContent .dateprice .date form{display: block;width: 100vw;margin-top: 40px;margin-bottom: 0;}
+  .rezervaciaContent .dateprice{margin-left: 20px;margin-right: 20px;}
+  .rezervaciaContent .dateprice .date p{width: 50% !important;margin-left: 50%;transform: translateX(-50%);top: 30px;margin-top: 20px;}
+  .rezervaciaContent .dateprice .date p a{display: none;}
+  .rezervaciaContent .dateprice .date p img{right: 10px;}
+  .rezervaciaContent input[type="submit"]{width: calc(100vw - 40px);margin-top: 50px;margin-left: 20px;height: 80px;}
+  .price{display: none;}
+  .priceMobile{display: block;}
+  .priceMobile .priceItem {height: 80px;margin: 0;font-family: roboto;font-size: 20px;    padding-left: 20px;}
+  .priceMobile .priceItem span{color: #8e8a7d;float: right;padding-right: 20px;}
+  .priceMobile .priceInfo{background-color: #fbf8ea;color: #8e8a7d;font-family: roboto;font-size: 20px;    padding-top: 30px;text-align: center;}
+  .galeria{height: unset;}
+  .galeria .galeriaBckgrnd{display: none;}
+  .galeria .galeriaContent{width: 100vw;}
+  .galeria h2{text-align: center;}
+  .galeria .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);}
+  .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
+  .galeria .galleryType p{width: 250px;text-align: center;}
+  .modal-content{width: 80%;margin-top: 36px;}
+  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
+  .modal{top: 116px;}
+  #map{display: none;}
+  .footer .footerContent{width: 100vw;display: inline;}
+  .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
+  .footer .footerContent .footerItem h3{font-size:30px;font-weight: 800; }
+  .footer .footerContent .footerItem form{display: inline;}
+  .footer .footerContent .footerItem .leftFooter{width: 50vw;}
+  .footer .footerContent .footerItem .rightFooter{margin-left: 0;}
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .header{position: fixed;top: 0;height: 116px;z-index: 20;}
+  .background{margin-top: 116px;}
+  .navMenu{display: none;}
+  .headerContent{max-width: 100vw;}
+  #menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #menuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #closeMenuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #menuMobile{display:block;height: calc(100vh - 116px);position: fixed;top:-200vh;width: 100vw;background-color: #f0ecd8;margin-top: 116px;transition: top .5s ease-out;}
+  #menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  #menuMobile li{padding-top: 20px;}
+  #menuMobile li a{color: #404040;font-family: 'Playfair Display';font-size: 26px;}
+  .background{height: 100vw;background-position-x:-50%; }
+  .background h1{font-size: calc(100vw*0.1);}
+  .aboutContent{width: 100vw;}
+  .aboutContent h2{font-size: 28px;padding-top: calc(100vw*0.1);}
+  .aboutContent .divider{height: 5px;}
+  .aboutMobile{display: block;}
+  .about{display: none;}
+  .kamennyDvor{margin-top: 50px;}
+  .kamennyDvorContent{width: 100vw;display: block;}
+  .kamennyDvorContent .textArea{width: 100vw;}
+  .kamennyDvorContent .textArea h2{padding-top: 60px;text-align: center;}
+  .kamennyDvorContent .textArea h4{text-align: center;font-size: 22px;}
+  .kamennyDvorContent .textArea .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);margin-top: 10px;width:220px;    margin-bottom: 50px; }
+  .kamennyDvorContent .textArea p{padding-left: 20px;padding-right: 20px;}
+  .kamennyDvorContent .textArea h5{padding-left: 20px;padding-right: 20px;}
+  #tesimeSa{padding-bottom: 50px;}
+  .kamennyDvorContent .image img{top: 0;transform: none;}
+  .atrakcieContent{width: 100vw;}
+  .atrakcieContent h2{padding-top: 60px;}
+  .atrakcieContent .divider{height:5px;    margin-bottom: 50px !important;}
+  .rezervacia{padding-bottom: 30px;}
+  .rezervaciaContent h2{    padding-top: calc(100vw*0.075);}
+  .rezervaciaContent .divider{margin-bottom: 40px;height: 5px;}
+  .rezervaciaContent{width: 100vw;}
+  .rezervaciaContent .dateprice .date form{display: block;width: 100vw;margin-top: 40px;margin-bottom: 0;}
+  .rezervaciaContent .dateprice{margin-left: 20px;margin-right: 20px;}
+  .rezervaciaContent .dateprice .date p{width: 50% !important;margin-left: 50%;transform: translateX(-50%);top: 30px;margin-top: 20px;}
+  .rezervaciaContent .dateprice .date p a{display: none;}
+  .rezervaciaContent .dateprice .date p img{right: 10px;}
+  .rezervaciaContent input[type="submit"]{width: calc(100vw - 40px);margin-top: 50px;margin-left: 20px;height: 80px;}
+  .price{display: none;}
+  .priceMobile{display: block;}
+  .priceMobile .priceItem {height: 80px;margin: 0;font-family: roboto;font-size: 20px;    padding-left: 20px;}
+  .priceMobile .priceItem span{color: #8e8a7d;float: right;padding-right: 20px;}
+  .priceMobile .priceInfo{background-color: #fbf8ea;color: #8e8a7d;font-family: roboto;font-size: 20px;    padding-top: 30px;text-align: center;}
+  .galeria{height: unset;}
+  .galeria .galeriaBckgrnd{display: none;}
+  .galeria .galeriaContent{width: 100vw;}
+  .galeria h2{text-align: center;}
+  .galeria .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);}
+  .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
+  .galeria .galleryType p{width: 250px;text-align: center;}
+  .modal-content{width: 80%;margin-top: 36px;}
+  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
+  .modal{top: 116px;}
+  #map{display: none;}
+  .footer .footerContent{width: 100vw;display: inline;}
+  .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
+  .footer .footerContent .footerItem h3{font-size:30px;font-weight: 800; }
+  .footer .footerContent .footerItem form{display: inline;}
+  .footer .footerContent .footerItem .leftFooter{width: 50vw;}
+  .footer .footerContent .footerItem .rightFooter{margin-left: 0;}
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header{position: fixed;top: 0;height: 116px;z-index: 20;}
+  .background{margin-top: 116px;}
+  .navMenu{display: none;}
+  .headerContent{max-width: 100vw;}
+  #menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #menuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  #closeMenuMobileIcon img{width: 100%;filter: invert(0.5) sepia(1) brightness(0.9);}
+  #menuMobile{display:block;height: calc(100vh - 116px);position: fixed;top:-200vh;width: 100vw;background-color: #f0ecd8;margin-top: 116px;transition: top .5s ease-out;}
+  #menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  #menuMobile li{padding-top: 20px;}
+  #menuMobile li a{color: #404040;font-family: 'Playfair Display';font-size: 26px;}
+  .background{height: 100vw;background-position-x:-50%; }
+  .background h1{font-size: calc(100vw*0.1);}
+  .aboutContent{width: 100vw;}
+  .aboutContent h2{font-size: 28px;padding-top: calc(100vw*0.1);}
+  .aboutContent .divider{height: 5px;}
+  .aboutMobile{display: block;}
+  .about{display: none;}
+  .kamennyDvor{margin-top: 50px;}
+  .kamennyDvorContent{width: 100vw;display: block;}
+  .kamennyDvorContent .textArea{width: 100vw;}
+  .kamennyDvorContent .textArea h2{padding-top: 60px;text-align: center;}
+  .kamennyDvorContent .textArea h4{text-align: center;font-size: 22px;}
+  .kamennyDvorContent .textArea .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);margin-top: 10px;width:220px;    margin-bottom: 50px; }
+  .kamennyDvorContent .textArea p{padding-left: 20px;padding-right: 20px;}
+  .kamennyDvorContent .textArea h5{padding-left: 20px;padding-right: 20px;}
+  #tesimeSa{padding-bottom: 50px;}
+  .kamennyDvorContent .image img{top: 0;transform: none;}
+  .atrakcieContent{width: 100vw;}
+  .atrakcieContent h2{padding-top: 60px;}
+  .atrakcieContent .divider{height:5px;    margin-bottom: 50px !important;}
+  .rezervacia{padding-bottom: 30px;}
+  .rezervaciaContent h2{    padding-top: calc(100vw*0.075);}
+  .rezervaciaContent .divider{margin-bottom: 40px;height: 5px;}
+  .rezervaciaContent{width: 100vw;}
+  .rezervaciaContent .dateprice .date form{display: block;width: 100vw;margin-top: 40px;margin-bottom: 0;}
+  .rezervaciaContent .dateprice{margin-left: 20px;margin-right: 20px;}
+  .rezervaciaContent .dateprice .date p{width: 50% !important;margin-left: 50%;transform: translateX(-50%);top: 30px;margin-top: 20px;}
+  .rezervaciaContent .dateprice .date p a{display: none;}
+  .rezervaciaContent .dateprice .date p img{right: 10px;}
+  .rezervaciaContent input[type="submit"]{width: calc(100vw - 40px);margin-top: 50px;margin-left: 20px;height: 80px;}
+  .price{display: none;}
+  .priceMobile{display: block;}
+  .priceMobile .priceItem {height: 80px;margin: 0;font-family: roboto;font-size: 20px;    padding-left: 20px;}
+  .priceMobile .priceItem span{color: #8e8a7d;float: right;padding-right: 20px;}
+  .priceMobile .priceInfo{background-color: #fbf8ea;color: #8e8a7d;font-family: roboto;font-size: 20px;    padding-top: 30px;text-align: center;}
+  .galeria{height: unset;}
+  .galeria .galeriaBckgrnd{display: none;}
+  .galeria .galeriaContent{width: 100vw;}
+  .galeria h2{text-align: center;}
+  .galeria .divider{height: 5px;margin-left: 50%;transform: translateX(-50%);}
+  .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
+  .galeria .galleryType p{width: 250px;text-align: center;}
+  .modal-content{width: 80%;margin-top: 36px;}
+  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
+  .modal{top: 116px;}
+  #map{display: none;}
+  .footer .footerContent{width: 100vw;display: inline;}
+  .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
+  .footer .footerContent .footerItem h3{font-size:30px;font-weight: 800; }
+  .footer .footerContent .footerItem form{display: inline;}
+  .footer .footerContent .footerItem .leftFooter{width: 50vw;}
+  .footer .footerContent .footerItem .rightFooter{margin-left: 0;}
+}
