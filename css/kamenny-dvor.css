@@ -8,6 +8,20 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+#confirm_rezervation_popup{display: none;width: 100vw;height: 100vh;position: fixed;top: 0;}
+.confirm_rezervation_back{background-color: #f0ecd8;opacity: 0.8;width: 100%;height: 100%;position: absolute;top: 0;pointer-events: none;}
+.confirm_rezervation{position: absolute;width: 400px;height: 500px;background-color: white;margin-left: 50%;transform: translateX(-50%);margin-top: 116px;}
+.confirm_rezervation_container{width: 100%;height: 100%;position: relative;top: -30px;}
+.confirm_rezervation_container a{position: absolute;right: 0;width: 50px;height: 50px;}
+.confirm_rezervation_container a img{width: 50px;filter: invert(0.5) sepia(1) brightness(0.9);}
+.confirm_rezervation_container input[type=text]{display: inherit;margin-left: 50%;transform: translateX(-50%);top: 70px;position: relative;margin-top: 30px;    width: 50%;height: 40px;border: none;border-bottom: solid 3px #9a8543;outline: none;}
+.confirm_rezervation_container input[type=submit]{width: 250px;background-color: #9a8543;border: none;color: white;padding: 0;font-size: 18px;font-family: roboto;font-weight: bold;text-transform: uppercase;cursor: pointer;outline: none;height: 70px;position: relative;margin-left: 50%;transform: translateX(-50%);top: 100px;}
+
 #penzionModal{display: none;}
 
 .fa{cursor:pointer;}
@@ -210,14 +224,23 @@ img.hover-shadow {
 
 
 /*Media Query*/
-
+@media (min-width: 1025px) and (max-width: 1169px) {
+	.headerContent{max-width: 100vw;}
+	.logo{padding-left: 20px;}
+	.kamennyDvorContent{max-width: 1000px;}
+	.atrakcieContent{    max-width: 1000px;}
+	.galeria .galeriaContent{width: 1000px;}
+	.galeria .galleryType{padding-top: 100px;}
+	.galeria .galleryType img{width: 230px;}
+	.footer .footerContent{max-width: 1000px;}
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
   
   .header{position: fixed;top: 0;height: 116px;z-index: 20;}
   .background{margin-top: 116px;}

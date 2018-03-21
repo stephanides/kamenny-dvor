@@ -1,4 +1,5 @@
 if (/Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent)){
+  console.log("isMobile");
   $(document).ready(function() {
     $("#lightSlider1").lightSlider({
       item:1
@@ -11,6 +12,7 @@ if (/Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobi
   });
 }
 else{
+  console.log("isntMobile");
   $(document).ready(function() {
     $("#lightSlider1").lightSlider({
       item:3
@@ -22,6 +24,74 @@ else{
     }); 
   });
 }
+
+
+function sendEmail(e) {
+  e.preventDefault();
+  console.log("Odosielam");
+  var data = {
+    name: $("#fname").val(),
+    email: $("#email").val(),
+    message: $("#message").val(),
+    subject: $("#sub").val(),
+  };
+  $.ajax({
+    type: "POST",
+    url: "contact_us.php",
+    data: data,
+    success: function(){
+        console.log("uspesne poslane");
+    }
+});
+}
+
+$("#send_rezervation_form").submit(function(e){
+  console.log("odosielam rezervaciu");
+  e.preventDefault();
+  var data = {
+    dateFrom: $("#datefrom").val(),
+    dateTo: $("#dateto").val(),
+    pocetOsob: $("#pocetosob").val(),
+    pocetDeti: $("#pocetdeti").val(),
+    name:$("#fnamerez").val(),
+    surname:$("#snamerez").val(),
+    email:$("#emailrez").val(),
+    tel:$("#telrez").val(),
+  };
+  console.log(data);
+  $.ajax({
+    type: "POST",
+    url: "rezervation.php",
+    data: data,
+    success: function(){
+        console.log("uspesne poslane");
+    }
+});
+})
+
+$("#rezervation_form").submit(function(e){
+  e.preventDefault();
+  document.getElementById('confirm_rezervation_popup').style.display='block';
+});
+
+$("#contact_form").submit(function(e){
+  e.preventDefault();
+  console.log("Odosielam");
+  var data = {
+    name: $("#fname").val(),
+    email: $("#email").val(),
+    message: $("#message").val(),
+    subject: $("#sub").val(),
+  };
+  $.ajax({
+    type: "POST",
+    url: "contact_us.php",
+    data: data,
+    success: function(){
+        console.log("uspesne poslane");
+    }
+});
+});
 
 
 function section(e){
@@ -60,23 +130,7 @@ function myMap() {
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 
-function sendEmail() {
-  console.log("Odosielam");
-  var data = {
-    name: $("#fname").val(),
-    email: $("#email").val(),
-    message: $("#message").val(),
-    subject: $("#sub").val(),
-  };
-  $.ajax({
-    type: "POST",
-    url: "contact_us.php",
-    data: data,
-    success: function(){
-        console.log("uspesne poslane");
-    }
-});
-}
+
 
 function openPenzionModal(){
   document.getElementById("penzionModal").style.display = "block";

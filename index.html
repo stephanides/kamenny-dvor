@@ -171,7 +171,7 @@
 			<div class="divider" style="margin-bottom: calc(100vw*0.025)"></div>
 			<div class = "dateprice">
 				<div class = "date">
-					<form action="/action_page.php">
+					<form id = "rezervation_form" name = "rezervation_form">
 						<p>Dátum od: <input type="text" id="datefrom" placeholder="DD/MM/YYYY">
 							<img src="images/icons/kalendar_48px.svg">
 							<a class = "dateDivider"></a>
@@ -187,7 +187,8 @@
 						<p style="width: 100px;">Deti <input type=number id="pocetdeti" placeholder="0">
 							<img src="images/icons/deti_48px.svg">
 						</p>
-						 <input type="submit" value="Odoslať rezerváciu">
+						 <input type="submit" value="Odoslať rezerváciu" >
+
 					</form>
 				</div>
 				<div class = "price">
@@ -279,7 +280,7 @@
 						</div>
 						<div class="rightFooter">
 							<textarea id="message" name="message" placeholder="Text správy"></textarea>
-							<input type="submit" value="Napíšte nám" onclick="sendEmail()">
+							<input type="submit" value="Napíšte nám" >
 						</div>
 						<div id="form-messages"></div>
 					</form>
@@ -449,6 +450,25 @@
 							</li>
 					</ul>
 				</div>
+
+	 <div id="confirm_rezervation_popup" class="w3-modal">
+	 						<div class = "confirm_rezervation_back"></div>
+						    <div class="confirm_rezervation">
+						      <div class="confirm_rezervation_container">
+						        <a id = "close_rezervation" onclick = "document.getElementById('confirm_rezervation_popup').style.display='none';">
+									<img src="images/icons/ic_close_black_24px.svg">
+								</a>
+								<form id = "send_rezervation_form" name = "send_rezervation_form">
+						        <input type="text" id="fnamerez" name="firstname" placeholder="Meno">
+						        <input type="text" id="snamerez" name="secondname" placeholder="Priezvisko">
+						        <input type="text" id="emailrez" name="email" placeholder="E-mail">
+						        <input type="text" id="telrez" name="telnumber" placeholder="Tel. číslo">
+						        <input type="submit" value="Potvrdiť rezerváciu" >
+						        </form>
+						      </div>
+						    </div>
+
+						  </div>
 	<script src="js/kamenny-dvor.js"></script>
 	<script src="js/lightslider.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIgVXmPu4gpq_T_z_9XvjPt3lvH0yHzY0&callback=myMap"type="text/javascript"></script>
