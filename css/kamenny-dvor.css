@@ -121,9 +121,9 @@ input {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vw;
+  height: 100vh;
   overflow: auto;
-  background-color: black;
+  background-color: #f0ecd8;
 }
 
 /* Modal Content */
@@ -134,15 +134,16 @@ input {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* The Close Button */
 .close {
-  color: white;
+  color: #9a8543;
   position: absolute;
   top: 10px;
-  right: 25px;
-  font-size: 35px;
+  right: 25px;font-size: 70px;
   font-weight: bold;
 }
 
@@ -163,10 +164,9 @@ input {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 25vw;
+  top: 45%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -174,6 +174,7 @@ input {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  background-color: #9a8543;
 }
 
 /* Position the "next button" to the right */
@@ -195,13 +196,14 @@ input {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Caption text */
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 2px 16px;
   color: white;
 }
 
@@ -297,8 +299,7 @@ img.hover-shadow {
   .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
   .galeria .galleryType p{width: 250px;text-align: center;}
   .modal-content{width: 80%;margin-top: 36px;}
-  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
-  .modal{top: 116px;}
+  .modal{top: 116px;height: calc(100vh - 116px);}
   #map{display: none;}
   .footer .footerContent{width: 100vw;display: inline;}
   .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
@@ -370,8 +371,7 @@ img.hover-shadow {
   .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
   .galeria .galleryType p{width: 250px;text-align: center;}
   .modal-content{width: 80%;margin-top: 36px;}
-  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
-  .modal{top: 116px;}
+  .modal{top: 116px;height: calc(100vh - 116px);}
   #map{display: none;}
   .footer .footerContent{width: 100vw;display: inline;}
   .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
@@ -444,8 +444,7 @@ img.hover-shadow {
   .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
   .galeria .galleryType p{width: 250px;text-align: center;}
   .modal-content{width: 80%;margin-top: 36px;}
-  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
-  .modal{top: 116px;}
+  .modal{top: 116px;height: calc(100vh - 116px);}
   #map{display: none;}
   .footer .footerContent{width: 100vw;display: inline;}
   .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
@@ -517,8 +516,7 @@ img.hover-shadow {
   .galeria .galleryTypes{display: inline-block;margin-left: calc(50vw - 125px);}
   .galeria .galleryType p{width: 250px;text-align: center;}
   .modal-content{width: 80%;margin-top: 36px;}
-  .modal-content .prev, .next{top: 45vw;font-size: 40px;}
-  .modal{top: 116px;}
+  .modal{top: 116px;height: calc(100vh - 116px);}
   #map{display: none;}
   .footer .footerContent{width: 100vw;display: inline;}
   .footer .footerContent .footerItem{width:100% !important;padding-left: 20px;}
